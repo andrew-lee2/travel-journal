@@ -5,6 +5,7 @@ from sqlalchemy.exc import IntegrityError
 from .utils.auth import generate_token, requires_auth, verify_token
 
 
+
 @app.route('/', methods=['GET'])
 def index():
     return render_template('index.html')
