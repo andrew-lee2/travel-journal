@@ -12,7 +12,7 @@
     "build:production": "cd static && npm run clean && npm run build",
     "lint": "eslint src",
     "start": "node static/bin/server.js",
-    "test": "karma start",
+    "test": "karma start"
   },
   "repository": {
     "type": "git",
