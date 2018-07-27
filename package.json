@@ -13,7 +13,7 @@
     "lint": "eslint src",
     "start": "node static/bin/server.js",
     "test": "karma start",
-    "postinstall": "npm --dev install && npm run build:production"
+    "postinstall": "cd static && npm --dev install && npm run build:production"
   },
   "repository": {
     "type": "git",
