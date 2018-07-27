@@ -6,15 +6,12 @@
     "node": "6.10.2",
     "npm": "4.4.4"
   },
-  "scripts": {
-    "clean": "rimraf dist",
-    "build": "webpack --progress --verbose --colors --display-error-details --config webpack/common.config.js",
-    "build:production": "npm run clean && npm run build",
-    "postinstall": "npm --dev install && npm run build:production",
-    "lint": "eslint src",
-    "start": "node static/bin/server.js",
-    "test": "karma start"
-  },
+   "scripts": {
+     "build": "webpack --progress --verbose --colors --display-error-details --config webpack/common.config.js",
+     "postinstall": "cd static && npm --dev install && npm run build:production",
+     "lint": "eslint src",
+     "start": "node static/bin/server.js"
+   },
   "repository": {
     "type": "git",
     "url": ""
