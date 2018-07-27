@@ -5,7 +5,7 @@
   "scripts": {
     "clean": "rimraf dist",
     "build": "webpack --progress --verbose --colors --display-error-details --config static/webpack/common.config.js",
-    "build:production": "npm run clean && npm run build",
+    "build:production": "npm --dev install && npm run build:production",
     "lint": "eslint src",
     "start": "node static/bin/server.js",
     "test": "karma start"
@@ -28,7 +28,7 @@
   ],
   "author": "https://github.com/anorudes, https://github.com/keske",
   "license": "MIT",
-  "devDependencies": {
+  "Dependencies": {
     "autoprefixer": "6.5.3",
     "axios": "^0.15.3",
     "babel-core": "^6.4.5",
@@ -115,6 +115,5 @@
     "webpack-hot-middleware": "^2.6.0",
     "webpack-merge": "^1.0.2",
     "yargs": "^6.5.0"
-  },
-  "dependencies": {}
+  }
 }
