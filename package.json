@@ -9,7 +9,8 @@
   "scripts": {
     "clean": "rimraf dist",
     "build": "webpack --progress --verbose --colors --display-error-details --config webpack/common.config.js",
-    "build:production": "cd static && npm run clean && npm run build",
+    "build:production": "npm run clean && npm run build",
+    "postinstall": "cd static && npm --dev install && npm run build:production",
     "lint": "eslint src",
     "start": "node static/bin/server.js",
     "test": "karma start"
