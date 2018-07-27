@@ -62,7 +62,6 @@ $ python test.py --cov-report=term --cov-report=html --cov=application/ tests/
 ### Run Front-End
 
 ```sh
-$ cd static
 $ npm start
 ```
 
