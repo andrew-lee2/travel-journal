@@ -7,7 +7,7 @@
     "npm": "5.6.0"
   },
   "scripts": {
-    "postinstall": "cd static && npm --dev install && npm run build:production",
+    "postinstall": "cd static && npm run clean && npm run build:production && npm start",
     "start": "node static/bin/server.js"
   },
   "repository": {
