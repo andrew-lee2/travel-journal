@@ -7,12 +7,8 @@
     "npm": "5.6.0"
   },
   "scripts": {
-    "clean": "rimraf dist",
-    "build": "webpack --progress --verbose --colors --display-error-details --config static/webpack/common.config.js",
-    "build:production": "cd static && npm run clean && npm run build",
-    "lint": "eslint src",
-    "start": "node static/bin/server.js",
-    "test": "karma start"
+    "postinstall": "cd static && npm --dev install && npm run build:production",
+    "start": "node static/bin/server.js"
   },
   "repository": {
     "type": "git",
