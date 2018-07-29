@@ -9,7 +9,7 @@
   "scripts": {
     "clean": "rimraf dist",
     "build": "webpack --progress --verbose --colors --display-error-details --config static/webpack/common.config.js",
-    "postinstall": "cd static && npm run clean && npm run build && npm start",
+    "postinstall": "cd static && npm run clean && npm run build",
     "start": "node static/bin/server.js"
   },
   "repository": {
