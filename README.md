@@ -43,7 +43,6 @@ $ python manage.py db upgrade
 
 ### Install Front-End Requirements
 ```sh
-$ cd static
 $ npm install
 ```
 
@@ -68,7 +67,7 @@ $ npm start
 ### Build Front-End
 
 ```sh
-$ npm run build:production
+$ npm run build
 ```
 
 ### New to Python?
